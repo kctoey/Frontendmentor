@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(212, 45%, 89%);
+  font-size: 15px;
+  display: flex;
+  margin-top: 200px;
+  align-items: center;
+  justify-content: center;
+  font-family: "Mochiy Pop P One", sans-serif;
+}
+
+main {
+  background-color: white;
+  width: 325px;
+  border-radius: 20px;
+}
+.top {
+  margin: 20px;
+}
+
+.top img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.bottom {
+  text-align: center;
+  margin: 5px 20px;
+}
+main .bottom h1 {
+  margin: 10px;
+  font-size: 22px;
+  text-align: center;
+}
+main .bottom p {
+  margin: 10px 10px 30px 10px;
+  color: hsl(220, 15%, 55%);
+  text-align: center;
+}
