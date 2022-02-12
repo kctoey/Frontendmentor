@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Outfit&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(217, 54%, 11%);
+  font-size: 18px;
+  color: white;
+  font-family: "Outfit", sans-serif;
+  padding: 1.25rem;
+}
+.header {
+  background-color: hsl(216, 50%, 16%);
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+.header img {
+  max-width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 10;
+}
+.header .main-image {
+  position: relative;
+}
+.header .main-image div {
+  position: absolute;
+  top: 0;
+  background-color: hsl(178, 100%, 50%, 60%);
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.header .main-image div:hover {
+  opacity: 1;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.header .main-image div img {
+  width: 20%;
+  height: 20%;
+  position: absolute;
+  bottom: 30%;
+  right: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.header ul {
+  list-style-type: none;
+}
+
+.header h1 {
+  color: white;
+  margin: 1rem 0.5rem 0.5rem 0;
+}
+.header h1:hover {
+  color: hsl(178, 100%, 50%);
+  margin: 1rem 0.5rem 0.5rem 0;
+  cursor: pointer;
+}
+.header p {
+  color: hsl(215, 32%, 27%);
+}
+.header ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0;
+  border-bottom: 1px solid white;
+}
+.header ul li:nth-child(1) {
+  color: hsl(178, 100%, 50%);
+}
+.header ul li {
+  display: flex;
+  align-items: center;
+}
+.header ul li img {
+  margin-right: 0.5rem;
+}
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  font-size: 12px;
+  padding-top: 2rem;
+}
+.avatar img {
+  width: 3.5rem;
+  border: 1px solid white;
+  border-radius: 2rem;
+  margin-right: 1rem;
+}
+
+.avatar h1 span {
+  font-family: "Outfit", sans-serif;
+}
+.avatar h1 span:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+@media (min-width: 500px) {
+  .header {
+    width: 450px;
+    margin: auto;
+  }
+}
