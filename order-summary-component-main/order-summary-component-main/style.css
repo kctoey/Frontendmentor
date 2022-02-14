@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Outfit&family=Red+Hat+Display:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: hsl(225, 100%, 94%);
+  text-align: center;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.bg__image {
+  background: url("./images/pattern-background-mobile.svg") no-repeat
+    center/cover;
+  height: 400px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.container {
+  background-color: white;
+  margin: 20px;
+  padding-bottom: 20px;
+  border-radius: 1.5rem;
+  box-shadow: 2px 2px 2px lightgray ;
+}
+.container img.hero {
+  width: 100%;
+  border-radius: 1.5rem 1.5rem 0 0;
+}
+.container h1 {
+margin: 30px 0;
+}
+.container h2 {
+  padding: 0 60px;
+  font-size: 16px;
+  color: hsl(224, 23%, 55%);
+}
+.container .box {
+  background-color: hsl(225, 100%, 98%);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 30px;
+  border-radius: 0.5rem;
+}
+.container .box .plan {
+  margin-right: 130px;
+  font-weight: 1000;
+}
+.container .box .plan p {
+  font-weight: 100;
+}
+.container .box .btn-change {
+  text-decoration-line: underline;
+  color: hsl(245, 75%, 52%);
+  font-weight: 1000;
+  background-color: transparent;
+  border:none;
+  cursor: pointer;
+}
+.container .btn-first {
+  font-family: "Outfit", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.btn-first :nth-child(1) {
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  padding: 15px 140px;
+  margin-bottom: 10px;
+  border:none;
+  border-radius: 0.5rem;
+  font-weight: 800;
+  cursor: pointer;
+
+}
+.btn-first :nth-child(1):hover,
+.btn-change:hover {
+  opacity: 0.8;
+
+}
+.btn-first :nth-child(2) {
+  border:none;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  color: grey;
+  font-weight: 800;
+  padding: 20px;
+  cursor: pointer;
+
+
+}
+
+@media (min-width: 768px) {
+  .bg__image {
+    background: url(./images/pattern-background-desktop.svg) no-repeat
+      center/cover;
+    height: 50vh;
+  }
+  .container {
+    width: 500px;
+  }
+}
+/* @media (min-width: 500px) {
+  body {
+    width: 450px;
+  } */
+}
