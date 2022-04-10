@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+:root {
+  --red-color: hsl(0, 100%, 74%);
+  --green-color: hsl(154, 59%, 51%);
+  --blue-color: hsl(248, 32%, 49%);
+  --Dark-color: hsl(249, 10%, 26%);
+  --light-color: hsl(246, 25%, 77%);
+  --font-pop: "Poppins", sans-serif;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-pop);
+}
+
+body {
+  font-size: 16px;
+}
+section {
+  max-width: 100%;
+  width: 50%;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("./images/bg-intro-desktop.png") no-repeat;
+  background-size: cover;
+  background-color: var(--red-color);
+  padding: 0px 160px;
+}
+.learn {
+  color: #fff;
+  padding-right: 30px;
+}
+h1 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 56px;
+}
+
+.learn p {
+  padding-top: 20px;
+  font-weight: 400;
+}
+.head {
+  width: 90%;
+  color: #fff;
+  padding: 15px 20px;
+  text-align: center;
+  border-radius: 0.5rem;
+  background-color: var(--blue-color);
+}
+.head span {
+  font-weight: 600;
+}
+#form {
+  width: 90%;
+  margin-top: 20px;
+  border-radius: 0.7rem;
+  padding: 35px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+form div {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+button {
+  padding: 10px 30px;
+  margin-bottom: 18px;
+  border: 1px solid #efefef;
+  border-radius: 0.5rem;
+  font-weight: 600;
+}
+button {
+  text-transform: uppercase;
+  background-color: var(--green-color);
+  color: #fff;
+  cursor: pointer;
+}
+form p {
+  font-size: 10px;
+  color: var(--Dark-color);
+  margin: auto;
+}
+form p span {
+  color: var(--red-color);
+  font-weight: 600;
+}
+input:focus,
+button:focus {
+  outline: none;
+}
+button:hover {
+  opacity: 0.8;
+}
+.error {
+  border: 1px solid --red-color;
+  background: url(./images/icon-error.svg) no-repeat;
+  background-position: 95% 50%;
+}
+error-text {
+  font-size: 12px;
+  margin-left: auto;
+  margin-top: -15px;
+  margin-bottom: 20px;
+  color: var(--red-color);
+}
+.success {
+  border: 2px solid --green-color;
+}
+@media (max-width: 768px) {
+  main {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url("./images/bg-intro-mobile.png");
+    background-color: var(--red-color);
+  }
+  section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .learn {
+    text-align: center;
+    padding: 40px 0px 60px;
+  }
+  form p {
+    text-align: center;
+  }
+  h1 {
+    font-size: 38px;
+  }
+  .head {
+    padding: 15px 60px;
+  }
+}
