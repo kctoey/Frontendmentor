@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+:root {
+  --Light-Cyan: hsl(193, 38%, 86%);
+  --Neon-Green: hsl(150, 100%, 66%);
+  --Grayish-Blue: hsl(217, 19%, 38%);
+  --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --Dark-Blue: hsl(218, 23%, 16%);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0%;
+}
+body {
+  background-color: var(--Dark-Blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+main {
+  text-align: center;
+  background-color: var(--Dark-Grayish-Blue);
+  font-family: "Manrope", sans-serif;
+  max-width: 650px;
+  padding: 20px;
+  border-radius: 2rem;
+}
+h1 {
+  color: var(--Neon-Green);
+  font-size: 20px;
+  font-weight: 100;
+  line-height: 3rem;
+  letter-spacing: 5px;
+}
+.containertext {
+  color: var(--Light-Cyan);
+  font-size: 28px;
+  padding: 20px;
+}
+.divider {
+  margin: 25px;
+}
+button {
+  display: block;
+  margin: auto;
+  border-color: transparent;
+  padding: 20px;
+  background-color: var(--Neon-Green);
+  border-radius: 2.1rem;
+  cursor: pointer;
+}
+button:active {
+  transform: scale(0.9);
+  transition: 0.1s ease-in-out;
+}
+button:hover {
+  box-shadow: 0 0 1rem hsl(150, 100%, 66%), 0 0 2rem hsl(150, 100%, 66%);
+}
